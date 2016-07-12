@@ -1,0 +1,7 @@
+.vagrant/
+
+*.zip
+*.gz
+
+keys/
+

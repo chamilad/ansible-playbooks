@@ -1,0 +1,15 @@
+---
+-  name: Ansible playbook to configure basic setup fo WSO2 MB
+   hosts: vagrant
+   # remote_user: root
+   become: true
+
+   roles:
+      - java
+   #
+   # environment:
+   #    JAVA_HOME: {{ java_home }}
+
+   # vars:
+   #   user_name: chamilad
+   #   user_pass: $6$gGF67h7gg6$Hdmalcx9Bv3Epa4Foof5dgQtk/u3wwH/2sctyW6BgA6vNetMyvydQ8TDXoKZd3SHKtljd.hx6jupe36yL6vLP1
