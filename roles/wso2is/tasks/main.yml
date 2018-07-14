@@ -1,0 +1,12 @@
+---
+# tasks file for wso2is
+
+# This assumes Java is already installed
+
+# 1. Unzip product to location
+
+# 2. Apply templates
+
+# 3. Add Service definition
+
+# 4. Start server
