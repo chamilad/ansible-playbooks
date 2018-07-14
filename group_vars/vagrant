@@ -1,6 +1,0 @@
----
-ansible_ssh_user: vagrant
-ansible_ssh_private_key_file: keys/private_key
-
-jdk_file: jdk-8u77-linux-x64.tar.gz
-java_home: /opt/java/jdk1.8.0_77

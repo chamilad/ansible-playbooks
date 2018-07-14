@@ -1,9 +1,0 @@
----
-servers:
-  -
-    enabled: true
-    hostname: wso2mb.3.1.0.ansible.wso2.org
-    box: ubuntu/trusty64
-    ip: 192.168.100.2
-    ram: 2048
-    cpu: 1
