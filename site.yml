@@ -1,0 +1,7 @@
+- hosts: wso2is
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles: 
+    - wso2is

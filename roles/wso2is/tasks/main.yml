@@ -4,9 +4,21 @@
 # This assumes Java is already installed
 
 # 1. Unzip product to location
+- name: Unpack product distribution
+  unarchive: 
+    src: wso2is-5.5.0.zip
+    dest: /opt
 
 # 2. Apply templates
+# TODO
 
 # 3. Add Service definition
+# TODO
 
 # 4. Start server
+
+- name: Start WSO2 server
+  shell: "./wso2server.sh"
+  args:
+    chdir: "/opt/wso2is-5.5.0/bin/"
+    executable: "/bin/bash"
