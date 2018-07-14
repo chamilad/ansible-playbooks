@@ -13,12 +13,23 @@
 # TODO
 
 # 3. Add Service definition
-# TODO
+- name: Add WSO2 Server service definition
+  template: 
+    src: wso2service.j2
+    dest: /etc/init.d/wso2is
+    owner: root
+    group: root
+    mode: "u=rwx,g=rx,o=r"
 
 # 4. Start server
 
-- name: Start WSO2 server
-  shell: "./wso2server.sh"
-  args:
-    chdir: "/opt/wso2is-5.5.0/bin/"
-    executable: "/bin/bash"
+# - name: Start WSO2 server
+#   shell: "./wso2server.sh"
+#   args:
+#     chdir: "/opt/wso2is-5.5.0/bin/"
+#     executable: "/bin/bash"
+
+- name: Start WSO2 service
+  service: 
+    name: wso2is
+    state: started
